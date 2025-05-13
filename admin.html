@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NervoHub</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX'); // Replace with your Google Analytics ID
+  </script>
+  <style>
+    :root {
+      --bg: #0d0d0d;
+      --accent: #00ffe7;
+      --text: #f2f2f2;
+      --card: #1a1a1a;
+    }
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+    }
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      border-bottom: 1px solid #333;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    nav {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    nav a {
+      color: var(--accent);
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .section {
+      padding: 2rem;
+      background-color: var(--card);
+      margin: 1rem auto;
+      max-width: 800px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #000;
+    }
+    .section h2 {
+      color: var(--accent);
+    }
+    .download-link {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: var(--accent);
+      color: #000;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+    .message-icon {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: var(--accent);
+      color: black;
+      padding: 10px 15px;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 0 10px #00ffe7;
+      font-size: 20px;
+      z-index: 1000;
+    }
+    .message-box {
+      display: none;
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      background: var(--card);
+      border: 1px solid #444;
+      padding: 1rem;
+      border-radius: 12px;
+      width: 300px;
+      box-shadow: 0 0 15px #000;
+      z-index: 1000;
+    }
+    .message-box input,
+    .message-box textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      border: none;
+      font-family: inherit;
+    }
+    .message-box button {
+      background-color: var(--accent);
+      color: black;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+    .social-icons {
+      margin-top: 1rem;
+      font-size: 1rem;
+    }
+    .social-icons a {
+      display: inline-block;
+      margin: 0.5rem;
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .social-icons a i {
+      margin-right: 0.5rem;
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <script>
+    const password = prompt("Enter admin password:");
+    if (password !== "nerveking") {
+      document.body.innerHTML = "<h1 style='color:red;'>Access Denied</h1>";
+    }
+  </script>
+
+  <header>
+    <h1>NervoHub</h1>
+    <p>Free Designs for Open Minds</p>
+    <div class="social-icons">
+      <a href="https://instagram.com/naren_hullatti_tech" target="_blank">
+        <i class="fab fa-instagram"></i>@naren_hullatti_tech
+      </a>
+      <a href="mailto:techchillonarenhullatti@gmail.com">
+        <i class="fas fa-envelope"></i>techchillonarenhullatti@gmail.com
+      </a>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#circuits">Circuits</a>
+    <a href="#designs">3D Designs</a>
+    <a href="#code">Code Vault</a>
+    <a href="#scripts">Script Request</a>
+    <a href="#about">About</a>
+  </nav>
+
+  <div class="section" id="circuits">
+    <h2>🤖 Circuit Designs</h2>
+    <p>Free schematics, diagrams, and electronics for your next big project.</p>
+    <a class="download-link" href="https://drive.google.com/drive/folders/1Ab3OMAEITpUG55IwI4ef9BQFJp9hw6vz?usp=sharing" target="_blank">Browse on Drive</a>
+  </div>
+
+  <div class="section" id="designs">
+    <h2>🔨 3D Designs</h2>
+    <p>STLs, OBJs, and CAD files ready for print or edit. Straight from the vault.</p>
+    <a class="download-link" href="https://drive.google.com/drive/folders/1DvmkCK6V1ieF26nR9s5iKP1snrZntcrP?usp=sharing" target="_blank">Browse on Drive</a>
+  </div>
+
+  <div class="section" id="code">
+    <h2>💻 Code Vault</h2>
+    <p>Firmware, Arduino sketches, AI code, and more. All open. All yours.</p>
+    <a class="download-link" href="https://drive.google.com/drive/folders/1I8c72pfXNF2drF7BuqbGmbyLG0lPyiO_?usp=sharing" target="_blank">Browse on Drive</a>
+  </div>
+
+  <div class="section" id="scripts">
+    <h2>📢 Script Request</h2>
+    <p>Need an anchoring script or anything custom in English? I got you. Drop your request here.</p>
+    <div class="message-box" style="display: block; position: relative; width: 100%; box-shadow: none;">
+      <input type="text" placeholder="Your Name" id="userNameAnchor">
+      <textarea placeholder="Tell me what script you need and for what occasion..." rows="4" id="userMessageAnchor"></textarea>
+      <button onclick="sendRequestAnchor()">Send Request</button>
+    </div>
+  </div>
+
+  <div class="section" id="about">
+    <h2>📞 About NervoHub</h2>
+    <p>NervoHub is a free, open-source initiative by Naren Hullatti to share futuristic circuit designs, 3D models, and code. No gatekeeping—just knowledge, pure and raw.</p>
+  </div>
+
+  <div class="message-icon" onclick="toggleMessageBox()">
+    ✉
+  </div>
+  <div class="message-box" id="messageBox">
+    <h3 style="margin-top: 0; color: var(--accent);">Request a Script</h3>
+    <input type="text" placeholder="Your Name" id="userName">
+    <textarea placeholder="What script do you need?" rows="4" id="userMessage"></textarea>
+    <button onclick="sendRequest()">Send</button>
+  </div>
+
+  <footer>
+    &copy; 2025 NervoHub. Powered by caffeine, curiosity, and chaos.
+  </footer>
+
+  <script>
+    function toggleMessageBox() {
+      const box = document.getElementById('messageBox');
+      box.style.display = box.style.display === 'block' ? 'none' : 'block';
+    }
+
+    function sendRequest() {
+      const name = document.getElementById('userName').value;
+      const message = document.getElementById('userMessage').value;
+      const mailtoLink = `mailto:techchillonarenhullatti@gmail.com?subject=Script%20Request%20from%20${encodeURIComponent(name)}&body=${encodeURIComponent(message)}`;
+      window.location.href = mailtoLink;
+    }
+
+    function sendRequestAnchor() {
+      const name = document.getElementById('userNameAnchor').value;
+      const message = document.getElementById('userMessageAnchor').value;
+      const mailtoLink = `mailto:techchillonarenhullatti@gmail.com?subject=Script%20Request%20from%20${encodeURIComponent(name)}&body=${encodeURIComponent(message)}`;
+      window.location.href = mailtoLink;
+    }
+  </script>
+</body>
+</html>
